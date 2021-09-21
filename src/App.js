@@ -7,8 +7,8 @@ function App() {
     <div className="App text-gray-700 dark:text-gray-50 bg-gray-100 dark:bg-gray-900">
       <header className="App-header">
         <Navbar></Navbar>
-        <EmptyToDo></EmptyToDo>
       </header>
+      <EmptyToDo></EmptyToDo>
     </div>
   );
 }

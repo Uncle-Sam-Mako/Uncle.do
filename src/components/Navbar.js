@@ -4,7 +4,7 @@ import liste from '../img/liste.svg'
 function Navbar(){
     return (
         <Fragment>
-            <nav className="py-10 px-10  flex space-x-3">
+            <nav className="py-10 lg:px-10  sm:px-8 flex space-x-3">
                 <div className="flex-1 nav-brand ">
                     <span className="lg:text-2xl sm:text-lg">uncle</span>
                     <span className="text-customRed lg:text-5xl sm:text-3xl">.do</span>
