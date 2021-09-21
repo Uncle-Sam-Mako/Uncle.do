@@ -16,6 +16,9 @@ module.exports = {
       blue: colors.sky,
       red: colors.rose,
       pink: colors.fuchsia,
+      customRed: {
+        DEFAULT : "#FF6B6B"
+      }
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
