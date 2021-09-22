@@ -9,7 +9,7 @@ function App() {
         <Navbar></Navbar>
       </header>
       {/* <EmptyToDo></EmptyToDo> */}
-      <Form></Form>
+      <Form ></Form>
     </div>
   );
 }

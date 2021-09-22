@@ -1,5 +1,4 @@
 import { Fragment } from "react/cjs/react.production.min"
-import liste from '../img/liste.svg'
 
 function Navbar(){
     return (
