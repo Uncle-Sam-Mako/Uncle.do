@@ -1,6 +1,7 @@
 
 const colors = require('tailwindcss/colors');
 const plugin = require('tailwindcss/plugin');
+require('tailwindcss/')
 
 
 module.exports = {
@@ -18,6 +19,7 @@ module.exports = {
       blue: colors.sky,
       red: colors.rose,
       pink: colors.fuchsia,
+      white : colors.white,
       customRed: {
         DEFAULT : "#FF6B6B"
       }
@@ -40,6 +42,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
+    require('@tailwindcss/forms'),
     plugin(function({ addComponents }){
       const buttons = {
         '.btn-red': {

@@ -5,6 +5,9 @@ html, body, #root, .App{
 img, svg{
     width: 100%;
 }
+input, textarea, button{ 
+    transition: .5s;
+}
 nav{
     height: 100px;
     width: 100%;
@@ -17,4 +20,5 @@ nav .nav-brand{
 }
 nav .menu-icon{
     width: 25px;
+    height: 25px;
 }
