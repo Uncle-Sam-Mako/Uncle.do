@@ -1,4 +1,5 @@
 import Input from './Input';
+import Radio from './Radio'
 
 export default function Form() {
   return (
@@ -15,10 +16,12 @@ export default function Form() {
                     <div className="block text-sm font-medium text-gray-700">
                         <label htmlFor="color">Couleur</label>
                         <div className="inputs">
-                            <input type="radio" name="red" id="red"/>
-                            <input type="radio" name="red" id="red"/>
-                            <input type="radio" name="red" id="red"/>
-                            <input type="radio" name="red" id="red"/>
+                            <Radio color="#FF6B6B"></Radio>
+                            <Radio color="#3e98ff"></Radio>
+                            <Radio color="#00ffbf"></Radio>
+                            <Radio color="#c300ff"></Radio>
+                            <Radio color="#15b400"></Radio>
+                            <Radio color="#ffb400"></Radio>
                         </div>
                     </div>  
                 </div>

@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html, body, #root, .App{
     height: 100%;
     width: 100%;
@@ -21,4 +26,16 @@ nav .nav-brand{
 nav .menu-icon{
     width: 25px;
     height: 25px;
+}
+.radio{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.radio input[type="radio"]{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #15b400;
 }
