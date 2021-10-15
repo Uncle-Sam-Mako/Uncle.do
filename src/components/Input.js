@@ -10,8 +10,8 @@ const Input = function(props){
                 id="about"
                 name="about"
                 rows={3}
-                className="shadow-sm focus:ring-customRed focus:border-customRed mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
-                placeholder="you@example.com"
+                className="shadow focus:ring-0 focus:shadow-md  mt-1 block w-full sm:text-sm border rounded-md dark:bg-gray-600"
+                placeholder="Parlez de votre tâche"
                 defaultValue={''}
             />
         )
@@ -22,14 +22,14 @@ const Input = function(props){
                 name="first-name"
                 id="first-name"
                 autoComplete="given-name"
-                className="mt-1 focus:ring-customRed focus:border-customRed block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                className="mt-1 focus:ring-0 focus:shadow-md block w-full shadow sm:text-sm rounded-md dark:bg-gray-600"
             />
         )
     }
     return(
         <Fragment>
             <div className="mb-3">
-                <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="first-name" className="block text-sm font-medium text-gray-700 dark:text-gray-500">
                     {props.label}
                 </label>
                 {element}

@@ -9,11 +9,11 @@ export default function Form() {
           <div className="mt-5 md:mt-0 md:col-span-2">
             <form action="#" method="POST">
               <div className="shadow overflow-hidden sm:rounded-md">
-                <div className="px-4 py-5 bg-white sm:p-6">
+                <div className="px-4 py-5 bg-white dark:bg-gray-800 sm:p-6">
                   <div className="">
                     <Input type="text" label="Nom de la tâche"></Input>
                     <Input type="textarea" label="Description"></Input>
-                    <div className="block text-sm font-medium text-gray-700">
+                    <div className="block text-sm font-medium text-gray-700 dark:text-gray-500">
                         <label htmlFor="color">Couleur</label>
                         <div className="inputs">
                             <Radio color="#FF6B6B"></Radio>
@@ -26,7 +26,7 @@ export default function Form() {
                     </div>  
                 </div>
                 </div>
-                <div className="px-4 py-5 bg-gray-50 text-right sm:px-6">
+                <div className="px-4 py-5 bg-gray-50 dark:bg-gray-700 text-right sm:px-6">
                   <button
                     type="submit"
                     className="btn-red text-sm"

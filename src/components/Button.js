@@ -1,7 +1,7 @@
 
 const Button = function(props){
     return(
-        <button className="btn-red my-5 text-sm">{props.children}</button>
+        <button onClick={props.onClick} className="btn-red my-5 text-sm">{props.children}</button>
     )
 }
 

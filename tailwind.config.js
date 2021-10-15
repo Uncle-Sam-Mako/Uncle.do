@@ -35,7 +35,7 @@ module.exports = {
       },
       borderRadius: {
         '4xl': '2rem',
-      }
+      },
     }
   },
   variants: {
@@ -60,5 +60,8 @@ module.exports = {
       addComponents(buttons)
     })
   ],
+  corePlugins: {
+   ringColor: false,
+  }
 }
 
