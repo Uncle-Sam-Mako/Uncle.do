@@ -44,3 +44,13 @@ nav .menu-icon{
     place-items: center;
     justify-content: center;
 }
+/* .switch{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: rgba(175, 175, 175, 0.219);
+}
+.switch input{
+    opacity: 0;
+}
+ */

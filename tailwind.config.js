@@ -16,10 +16,13 @@ module.exports = {
     },
     colors: {
       gray: colors.coolGray,
+      yellow : colors.yellow,
       blue: colors.sky,
       red: colors.rose,
       pink: colors.fuchsia,
       white : colors.white,
+      sky: colors.sky,
+      cyan: colors.cyan,
       customRed: {
         DEFAULT : "#FF6B6B"
       }
@@ -60,8 +63,5 @@ module.exports = {
       addComponents(buttons)
     })
   ],
-  corePlugins: {
-   ringColor: false,
-  }
 }
 

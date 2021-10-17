@@ -1,26 +1,27 @@
 
-export default function Switch(props){
-    return(    
-        <div class="space-y-4">
-            <h2 class="text-xl text-gray-500">iOS mode</h2>
-            <div class="bg-white p-8 rounded-xl shadow">
-            <div class="flex md:justify-start justify-center items-end bg-gray-100 border relative sm:rounded-xl rounded-3xl h-[50vh]">
-                <div class="w-max m-auto">
-                <div class="flex gap-8 items-center">
-                    <label for="iosMode" class="flex w-10 h-10 rounded-full bg-yellow-500 bg-opacity-0 text text-yellow-400 tracking-wider text-sm font-semibold hover:bg-opacity-10 active:bg-opacity-20 focus:outline-none cursor-pointer transition">
-                    <span class="m-auto material-icons" style="font-size:20px">light_mode</span>
-                    </label>
-                    <div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
-                    <input type="checkbox" name="iosMode" id="iosMode" class="absolute ml-0.5 top-0.5 peer block w-6 h-6 rounded-full bg-white shadow-md appearance-none cursor-pointer checked:translate-x-5 transition delay-75 duration-500"/>
-                    <label for="iosMode" class="block overflow-hidden h-7 rounded-full bg-gray-200 cursor-pointer peer-checked:bg-cyan-800 transition"></label>
-                    </div>
-                    <label for="iosMode" class="flex w-10 h-10 rounded-full bg-gray-500 bg-opacity-0 text text-gray-500 tracking-wider text-sm font-semibold hover:bg-opacity-10 active:bg-opacity-20 focus:outline-none cursor-pointer transition">
-                    <span class="m-auto material-icons rotate-12 scale-75">mode_night</span>
-                    </label>
-                </div>
-                </div>
-            </div>
-            </div>
+
+
+export default function Switch(props) {
+    const htmlElt = document.querySelector('html');
+    const moon = (
+        <svg xmlns="http://www.w3.org/2000/svg" className="fill-current text-gray-500  absolute pointer-events-none h-8 w-8 " viewBox="0 0 20 20" fill="currentColor">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+        </svg>
+    );
+    const sun = (
+        <svg xmlns="http://www.w3.org/2000/svg"
+        className="fill-current text-yellow-500 absolute pointer-events-none h-8 w-8"  viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
+        </svg>
+    );
+    const handleClick = () => {
+        htmlElt.classList.toggle('dark');
+    }
+    const element = htmlElt.className !== "dark" ? moon : sun;
+    return (
+        <div className="w-10 h-10 bg-gray-200 dark:bg-yellow-100 rounded-lg m-20 relative grid place-items-center shadow-lg"> 
+            <input type="checkbox" onClick={() => handleClick()} className="cursor-pointer opacity-0 absolute top-0 left-0 w-full h-full" name="" id=""/>
+            {element}
         </div>
     )
 }
