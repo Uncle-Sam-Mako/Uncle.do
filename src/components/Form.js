@@ -15,13 +15,13 @@ export default function Form() {
                     <Input type="textarea" label="Description"></Input>
                     <div className="block text-sm font-medium text-gray-700 dark:text-gray-500">
                         <label htmlFor="color">Couleur</label>
-                        <div className="inputs">
-                            <Radio color="#FF6B6B"></Radio>
-                            <Radio color="#3e98ff"></Radio>
-                            <Radio color="#00ffbf"></Radio>
-                            <Radio color="#c300ff"></Radio>
-                            <Radio color="#15b400"></Radio>
-                            <Radio color="#ffb400"></Radio>
+                        <div className="inputs my-3">
+                            <Radio color="#FF6B6B" colorId="red"></Radio>
+                            <Radio color="#3e98ff" colorId="blue"></Radio>
+                            <Radio color="#00ffbf" colorId="cyan"></Radio>
+                            <Radio color="#c300ff" colorId="purple"></Radio>
+                            <Radio color="#15b400" colorId="green"></Radio>
+                            <Radio color="#ffb400" colorId="yellow"></Radio>
                         </div>
                     </div>  
                 </div>
