@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import Input from './Input';
 import { Redirect } from 'react-router';
+import Navbar from './Navbar';
 
 class LoginForm extends Component {
   state = {
@@ -20,7 +21,11 @@ class LoginForm extends Component {
     }
     return (
       <>
-        <div className="mt-10 sm:px-5 sm:mt-0 max-w-md mx-auto ">
+      <div className="App text-gray-700 dark:text-gray-50 bg-gray-100 dark:bg-gray-900">
+          <header className="App-header">
+            <Navbar></Navbar>
+          </header>
+          <div className="mt-10 sm:px-5 sm:mt-0 max-w-md mx-auto ">
           <div className="">
             <div className="mt-5 md:mt-0 md:col-span-2">
               <form action="#" onSubmit={this.handleSubmit}>
@@ -43,6 +48,7 @@ class LoginForm extends Component {
             </div>
           </div>
         </div>
+      </div>
       </>
     )
   }

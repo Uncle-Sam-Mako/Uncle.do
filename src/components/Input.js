@@ -10,6 +10,7 @@ const Input = function(props){
                 id="about"
                 name="about"
                 rows={3}
+                required
                 className="shadow focus:ring-0 focus:shadow-md  mt-1 block w-full sm:text-sm border rounded-md dark:bg-gray-600"
                 placeholder="Parlez de votre tâche"
                 defaultValue={''}

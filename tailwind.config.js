@@ -5,7 +5,8 @@ require('tailwindcss/')
 
 
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  mode : 'jit', 
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html', './src/components/**/*.{html,js}'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
@@ -15,7 +16,8 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      gray: colors.coolGray,
+      gray: colors.blueGray,
+      indigo: colors.indigo,
       yellow : colors.yellow,
       blue: colors.sky,
       red: colors.rose,
