@@ -2,11 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import LoginForm from './components/LoginForm';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={LoginForm}></Route>
+      <Route path="/pseudo/:pseudo" component={App}></Route>
+    </Switch>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

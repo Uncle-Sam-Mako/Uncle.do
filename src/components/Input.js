@@ -19,9 +19,11 @@ const Input = function(props){
         element = (
             <input
                 type={props.type}
-                name="first-name"
-                id="first-name"
-                autoComplete="given-name"
+                name={props.inputId}
+                id={props.inputId}
+                value = {props.Value}
+                onChange = {props.onChange}
+                required
                 className="mt-1 focus:ring-0 focus:shadow-md block w-full shadow sm:text-sm rounded-md dark:bg-gray-600"
             />
         )
